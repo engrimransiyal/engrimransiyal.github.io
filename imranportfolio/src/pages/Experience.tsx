@@ -5,7 +5,7 @@ import { experience } from "../data/experience.ts";
 
 export default function Experience() {
   return (
-    <div>
+    <div className="mt-5">
       <SectionTitle title="Experience" />
       <div className="grid md:grid-cols-2 gap-6">
         {experience.map((e) => (

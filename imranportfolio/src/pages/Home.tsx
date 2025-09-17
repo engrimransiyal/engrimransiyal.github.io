@@ -9,7 +9,7 @@ import { FaBolt, FaLanguage, FaUsers, FaWhatsapp, FaEnvelope, FaLinkedin } from 
 
 export default function Home() {
   return (
-    <div>
+    <div className="mt-5">
         
       <Hero />
       <section className="my-8">

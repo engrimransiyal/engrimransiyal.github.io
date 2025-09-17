@@ -4,7 +4,7 @@ import ContactForm from "../components/ContactForm.tsx";
 
 export default function Contact(){
   return (
-    <div>
+    <div className="mt-5">
       <SectionTitle title="Contact" />
       <div className="grid md:grid-cols-2 gap-6">
         <div>

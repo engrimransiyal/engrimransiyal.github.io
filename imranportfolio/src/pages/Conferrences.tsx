@@ -5,7 +5,7 @@ import Card from "../components/Card.tsx";
 
 export default function Conferences(){
   return (
-    <div>
+    <div className="mt-5">
       <SectionTitle title="Conferences & Seminars" />
       <div className="grid md:grid-cols-2 gap-4">
         {conferences.map(c => (

@@ -5,7 +5,7 @@ import { projects } from "../data/projects.ts";
 
 export default function Projects() {
   return (
-    <div className="px-4 sm:px-6 lg:px-8">
+    <div className="px-4 sm:px-6 lg:px-8 mt-5">
       <SectionTitle title="Projects" />
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
         {projects.map((p) => (
