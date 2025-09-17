@@ -9,6 +9,7 @@ export type ExperienceItem = {
 };
 
 export const experience: ExperienceItem[] = [
+    
   {
     company: "Guangxutu Electromechanical",
     role: "Intern Engineer",

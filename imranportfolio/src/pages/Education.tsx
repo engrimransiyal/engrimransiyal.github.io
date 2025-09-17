@@ -6,7 +6,7 @@ import Card from "../components/Card.tsx";
 export default function Education() {
   return (
     <div>
-      <SectionTitle>Education</SectionTitle>
+      <SectionTitle title="Education" />
       <div className="grid md:grid-cols-2 gap-6">
         {education.map((ed) => (
           <Card key={ed.school}>

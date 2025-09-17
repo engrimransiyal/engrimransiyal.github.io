@@ -5,7 +5,7 @@ import ContactForm from "../components/ContactForm.tsx";
 export default function Contact(){
   return (
     <div>
-      <SectionTitle>Contact</SectionTitle>
+      <SectionTitle title="Contact" />
       <div className="grid md:grid-cols-2 gap-6">
         <div>
           <p className="bg-card p-4 rounded">Email: engrimransiyal@gmail.com</p>

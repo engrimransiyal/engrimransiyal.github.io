@@ -6,7 +6,7 @@ import Card from "../components/Card.tsx";
 export default function Recommendations(){
   return (
     <div>
-      <SectionTitle>Recommendations</SectionTitle>
+      <SectionTitle title="Recommendations" />
       <div className="grid md:grid-cols-2 gap-4">
         {recommendations.map(r => (
           <Card key={r.name}>

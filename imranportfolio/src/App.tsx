@@ -14,7 +14,7 @@ import Contact from "./pages/Contact.tsx";
 
 export default function App() {
   return (
-    <div className="min-h-screen bg-gradient-to-b from-[#070707] via-[#090909] to-[#0b0b0b] text-gray-200 font-display">
+    <div className="min-h-screen bg-gradient-to-br from-blue-50 via-purple-50 to-pink-50 text-slate-800 font-display">
       <Navbar />
       <main className="max-w-6xl mx-auto px-4 py-10">
         <Routes>

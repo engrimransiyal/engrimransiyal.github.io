@@ -9,6 +9,7 @@ export type EducationItem = {
 };
 
 export const education: EducationItem[] = [
+    
   {
     school: "Northwestern Polytechnical University",
     degree: "Masters in Electrical Engineering",

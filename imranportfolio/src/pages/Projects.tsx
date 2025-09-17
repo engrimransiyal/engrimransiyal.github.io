@@ -6,7 +6,7 @@ import { projects } from "../data/projects.ts";
 export default function Projects() {
   return (
     <div>
-      <SectionTitle>Projects</SectionTitle>
+      <SectionTitle title="Projects" />
       <div className="grid md:grid-cols-2 gap-6">
         {projects.map(p => (
           <Card key={p.title}>

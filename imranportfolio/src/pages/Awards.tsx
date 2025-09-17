@@ -6,7 +6,7 @@ import Card from "../components/Card.tsx";
 export default function Awards(){
   return (
     <div>
-      <SectionTitle>Honors & Awards</SectionTitle>
+      <SectionTitle title={"Honors & Awards"} />
       <div className="grid md:grid-cols-2 gap-4">
         {awards.map(a => (
           <Card key={a.title}>

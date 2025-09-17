@@ -6,7 +6,7 @@ import { certifications } from "../data/certifications.ts";
 export default function Certifications(){
   return (
     <div>
-      <SectionTitle>Certifications</SectionTitle>
+      <SectionTitle title="Certifications" />
       <div className="grid md:grid-cols-2 gap-4">
         {certifications.map((c) => (
           <Card key={c.title}>

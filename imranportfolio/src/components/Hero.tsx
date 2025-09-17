@@ -1,34 +1,35 @@
 import React from "react";
 import { motion } from "framer-motion";
+import { GiElectric } from "react-icons/gi";
 
 export default function Hero() {
   return (
-    <section className="flex flex-col-reverse md:flex-row items-center justify-between gap-10 my-12">
-      {/* Left: Text */}
+    <section className="flex flex-col-reverse md:flex-row items-center justify-between gap-12 py-16">
+      {/* Left Content */}
       <motion.div
         initial={{ opacity: 0, x: -60 }}
         animate={{ opacity: 1, x: 0 }}
         transition={{ duration: 0.8 }}
         className="flex-1 text-center md:text-left"
       >
-        <h1 className="text-5xl font-extrabold">
-          Muhammad <span className="text-accent">Imran</span>
+        <h1 className="text-5xl font-extrabold text-slate-800 leading-tight">
+          Muhammad <span className="bg-gradient-to-r from-pink-500 via-purple-500 to-blue-500 text-transparent bg-clip-text">Imran</span>
         </h1>
-        <p className="mt-4 text-lg text-gray-300 max-w-lg">
-          Electrical Engineer specializing in Power Systems, Power Electronics, 
-          and Energy Management. Focused on delivering sustainable energy solutions.
+        <p className="mt-4 text-lg text-slate-600 max-w-lg">
+          Electrical Engineer specializing in Power Systems ⚡, Power Electronics 🔋, and Energy Management.
+          Passionate about building sustainable solutions for the future.
         </p>
         <div className="mt-6 flex gap-4 justify-center md:justify-start">
           <motion.a
             href="/projects"
-            className="px-5 py-2 rounded-xl bg-accent text-black font-semibold shadow hover:shadow-lg"
+            className="px-6 py-3 rounded-xl bg-gradient-to-r from-pink-500 via-purple-500 to-blue-500 text-white font-semibold shadow-lg hover:shadow-xl transition"
             whileHover={{ scale: 1.05 }}
           >
             View Projects
           </motion.a>
           <motion.a
             href="/contact"
-            className="px-5 py-2 rounded-xl border border-accent text-accent hover:bg-accent hover:text-black"
+            className="px-6 py-3 rounded-xl border-2 border-purple-400 text-purple-600 font-semibold hover:bg-purple-50"
             whileHover={{ scale: 1.05 }}
           >
             Contact Me
@@ -36,21 +37,21 @@ export default function Hero() {
         </div>
       </motion.div>
 
-      {/* Right: Profile Image */}
+      {/* Right Profile */}
       <motion.div
         initial={{ opacity: 0, scale: 0.8 }}
         animate={{ opacity: 1, scale: 1 }}
         transition={{ duration: 0.8 }}
         className="relative flex-1 flex justify-center"
       >
-        <div className="w-56 h-56 rounded-full bg-gradient-to-tr from-electric to-accent p-1">
+        <div className="w-60 h-60 rounded-full border-4 border-purple-400 shadow-lg shadow-blue-200 flex items-center justify-center bg-white">
           <img
-            src="https://i.pravatar.cc/300"
+            src="/Images/imran.jpg"
             alt="Imran"
-            className="w-full h-full rounded-full object-cover border-4 border-black"
+            className="w-56 h-56 rounded-full object-cover"
           />
         </div>
-        <div className="absolute -bottom-6 w-40 h-40 bg-electric/20 blur-3xl rounded-full"></div>
+        <GiElectric className="absolute -bottom-6 right-12 text-yellow-400 text-6xl animate-pulse" />
       </motion.div>
     </section>
   );

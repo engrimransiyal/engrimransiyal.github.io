@@ -6,7 +6,7 @@ import { experience } from "../data/experience.ts";
 export default function Experience() {
   return (
     <div>
-      <SectionTitle>Experience</SectionTitle>
+      <SectionTitle title="Experience" />
       <div className="grid md:grid-cols-2 gap-6">
         {experience.map((e) => (
           <Card key={e.company}>
