@@ -5,19 +5,39 @@ import { projects } from "../data/projects.ts";
 
 export default function Projects() {
   return (
-    <div>
+    <div className="px-4 sm:px-6 lg:px-8">
       <SectionTitle title="Projects" />
-      <div className="grid md:grid-cols-2 gap-6">
-        {projects.map(p => (
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        {projects.map((p) => (
           <Card key={p.title}>
-            <h3 className="font-semibold">{p.title}</h3>
-            {/* <p className="text-sm text-gray-600">{p.date}</p> */}
-            <p className="mt-2 text-black font-semibold">{p.short}</p>
-            <p className="mt-2 text-black">{p.description}</p>
-            <div className="mt-3 flex gap-2">
-              {p.tags?.map(t => <span className="text-xs px-2 py-1 bg-black/20 rounded" key={t}>{t}</span>)}
-              {p.link && <a className="ml-auto text-accent hover:cursor-pointer hover:underline" href={p.link} target="_blank" rel="noreferrer">Read</a>}
+            <h3 className="font-semibold text-lg text-slate-800">{p.title}</h3>
+            <p className="mt-2 text-slate-700 font-semibold">{p.short}</p>
+            <p className="mt-2 text-slate-600 text-sm leading-relaxed">
+              {p.description}
+            </p>
+
+            <div className="mt-3 flex flex-wrap gap-2 items-center">
+              {p.tags?.map((t) => (
+                <span
+                  key={t}
+                  className="text-xs px-2 py-1 bg-gradient-to-r from-blue-100 to-purple-100 text-slate-700 rounded shadow-sm"
+                >
+                  {t}
+                </span>
+              ))}
+
+              
             </div>
+            {p.link && (
+                <a
+                  className="ml-auto text-blue-600 font-medium hover:underline"
+                  href={p.link}
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  Read
+                </a>
+              )}
           </Card>
         ))}
       </div>

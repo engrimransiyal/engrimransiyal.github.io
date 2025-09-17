@@ -1,6 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { GiElectric } from "react-icons/gi";
+import { Link } from "react-router-dom";
 
 export default function Hero() {
   // Function to scroll to contact section
@@ -38,7 +39,7 @@ export default function Hero() {
             className="px-6 py-3 rounded-xl bg-gradient-to-r from-pink-500 via-purple-500 to-blue-500 text-white font-semibold shadow-lg hover:shadow-xl transition"
             whileHover={{ scale: 1.05 }}
           >
-            View Projects
+            <Link to="/projects">View Projects</Link>
           </motion.a>
 
           {/* Contact Button with Scroll */}
