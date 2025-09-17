@@ -1,0 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* small waveform divider used as a background */
+.wave-divider {
+  background: repeating-linear-gradient(
+    135deg,
+    rgba(255,255,255,0.02) 0 1px,
+    transparent 1px 6px
+  );
+}
+
+/* circuit-like thin border */
+.circuit-border {
+  box-shadow: 0 0 0 2px rgba(0,209,255,0.06) inset;
+}
