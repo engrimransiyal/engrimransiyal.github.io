@@ -5,7 +5,7 @@ import { technical, languages, personal,skills } from "../data/skills.ts";
 import Card from "../components/Card.tsx";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
-import { FaBolt, FaLanguage, FaUsers } from "react-icons/fa";
+import { FaBolt, FaLanguage, FaUsers, FaWhatsapp, FaEnvelope, FaLinkedin } from "react-icons/fa";
 
 export default function Home() {
   return (
@@ -153,11 +153,49 @@ export default function Home() {
         <p className="bg-card p-4 rounded">Traveling, Exploring, Debate and Discussion.</p>
       </section>
 
+      {/* Quick Links */}
       <section className="my-8">
         <SectionTitle title="Quick Links" />
         <div className="flex gap-4">
           <Link to="/projects" className="px-4 py-2 bg-electric rounded text-black">Projects</Link>
           <Link to="/experience" className="px-4 py-2 border border-gray-700 rounded">Experience</Link>
+          
+        </div>
+      </section>
+
+      {/* Contact Me */}
+      <section id="contact" className="my-16">
+        <SectionTitle title="Contact Me" />
+        <div className="flex flex-col md:flex-row gap-6 mt-6">
+          {/* WhatsApp */}
+          <a
+            href="https://wa.me/923030757478"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex items-center gap-3 px-6 py-4 bg-green-100 text-green-700 rounded-lg shadow-md hover:shadow-lg transition"
+          >
+            <FaWhatsapp className="text-2xl" /> WhatsApp
+          </a>
+
+          {/* Gmail */}
+          <a
+            href="mailto:yourgmail@gmail.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex items-center gap-3 px-6 py-4 bg-red-100 text-red-700 rounded-lg shadow-md hover:shadow-lg transition"
+          >
+            <FaEnvelope className="text-2xl" /> Gmail
+          </a>
+
+          {/* LinkedIn */}
+          <a
+            href="https://www.linkedin.com/in/your-linkedin"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex items-center gap-3 px-6 py-4 bg-blue-100 text-blue-700 rounded-lg shadow-md hover:shadow-lg transition"
+          >
+            <FaLinkedin className="text-2xl" /> LinkedIn
+          </a>
         </div>
       </section>
     </div>

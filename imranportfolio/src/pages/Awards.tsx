@@ -11,7 +11,13 @@ export default function Awards(){
         {awards.map(a => (
           <Card key={a.title}>
             <h4 className="font-semibold">{a.title}</h4>
-            <p className="text-sm text-gray-400">{a.desc}</p>
+            <p className="text-sm text-black font-semibold">{a.issuer}</p>
+            <p className="text-sm text-black">{a.description}</p>
+            {a.link && (
+              <a href={a.link} target="_blank" rel="noreferrer" className="text-sm text-blue-500 hover:underline">
+                View
+              </a>
+            )}
           </Card>
         ))}
       </div>

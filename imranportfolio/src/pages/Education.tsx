@@ -14,7 +14,7 @@ export default function Education() {
             <p className="text-gray-400">{ed.school}</p>
             <p className="mt-2 text-sm text-gray-500">{ed.start} — {ed.end} • {ed.grade}</p>
             {ed.thesis && <p className="mt-3 text-sm">{ed.thesis}</p>}
-            {ed.link && <a href={ed.link} target="_blank" rel="noreferrer" className="mt-3 inline-block text-accent">View</a>}
+            {ed.link && <a href={ed.link} target="_blank" rel="noreferrer" className="mt-3 inline-block text-accent hover:cursor-pointer hover:underline">View</a>}
           </Card>
         ))}
       </div>

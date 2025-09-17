@@ -11,11 +11,12 @@ export default function Projects() {
         {projects.map(p => (
           <Card key={p.title}>
             <h3 className="font-semibold">{p.title}</h3>
-            <p className="text-sm text-gray-400">{p.date}</p>
-            <p className="mt-2 text-gray-300">{p.short}</p>
+            {/* <p className="text-sm text-gray-600">{p.date}</p> */}
+            <p className="mt-2 text-black font-semibold">{p.short}</p>
+            <p className="mt-2 text-black">{p.description}</p>
             <div className="mt-3 flex gap-2">
               {p.tags?.map(t => <span className="text-xs px-2 py-1 bg-black/20 rounded" key={t}>{t}</span>)}
-              {p.link && <a className="ml-auto text-accent" href={p.link} target="_blank" rel="noreferrer">Read</a>}
+              {p.link && <a className="ml-auto text-accent hover:cursor-pointer hover:underline" href={p.link} target="_blank" rel="noreferrer">Read</a>}
             </div>
           </Card>
         ))}

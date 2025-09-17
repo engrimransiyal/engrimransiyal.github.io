@@ -11,7 +11,8 @@ export default function Conferences(){
         {conferences.map(c => (
           <Card key={c.title}>
             <h4 className="font-semibold">{c.title}</h4>
-            <p className="text-sm text-gray-400">{c.date} • {c.location}</p>
+            <p className="text-sm text-gray-900">{c.description} • {c.description}</p>
+            <p className="text-sm text-black font-semibold">{c.date} • {c.location}</p>
           </Card>
         ))}
       </div>

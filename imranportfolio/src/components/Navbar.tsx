@@ -11,7 +11,7 @@ const links = [
   { to: "/conferences", label: "Conferences" },
   { to: "/awards", label: "Awards" },
   { to: "/recommendations", label: "Recommendations" },
-  { to: "/contact", label: "Contact" },
+//   { to: "/contact", label: "Contact" },
 ];
 
 export default function Navbar() {

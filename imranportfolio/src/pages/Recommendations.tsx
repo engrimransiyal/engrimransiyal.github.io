@@ -11,8 +11,9 @@ export default function Recommendations(){
         {recommendations.map(r => (
           <Card key={r.name}>
             <h4 className="font-semibold">{r.name}</h4>
-            <p className="text-sm text-gray-400">{r.title}</p>
-            <a className="text-accent text-sm" href={r.link} target="_blank" rel="noreferrer">View</a>
+            <p className="text-sm text-gray-800">{r.title}</p>
+            <p className="text-xs text-black mt-2">{r.description}</p>
+            <a className="text-accent text-sm hover:cursor-pointer hover:underline" href={r.link} target="_blank" rel="noreferrer">View</a>
             <p className="text-xs text-gray-500 mt-2">{r.email}</p>
           </Card>
         ))}

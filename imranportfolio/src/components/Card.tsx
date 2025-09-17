@@ -16,7 +16,8 @@ export default function Card({ children }: { children: React.ReactNode }) {
       </div>
 
       {/* Glow effect */}
-      <span className="absolute inset-0 rounded-2xl bg-gradient-to-r from-pink-400 via-purple-400 to-blue-400 opacity-0 group-hover:opacity-30 blur-xl transition duration-500"></span>
+<span className="absolute inset-0 rounded-2xl bg-gradient-to-r from-pink-400 via-purple-400 to-blue-400 opacity-0 group-hover:opacity-30 blur-xl transition duration-500 pointer-events-none"></span>
+
     </motion.div>
   );
 }
